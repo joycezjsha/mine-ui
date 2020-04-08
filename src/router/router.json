@@ -1,0 +1,344 @@
+{
+  "指南": [
+    {
+      "name": "giud",
+      "path": "/giud",
+      "desc": "介绍"
+    },
+    {
+      "name": "install",
+      "path": "/install",
+      "desc": "安装"
+    },
+    {
+      "name": "start",
+      "path": "/start",
+      "desc": "开始"
+    }
+  ],
+  "组件": [
+    {
+      "desc": "basic",
+      "path": "/component",
+      "items": [
+        {
+          "desc": "Icon 图标",
+          "name": "icon",
+          "path": "/icon"
+        },
+        {
+          "desc": "Button 按钮",
+          "name": "button",
+          "path": "/button"
+        },
+        {
+          "desc": "Layout 布局",
+          "name": "layout",
+          "path": "/layout"
+        },
+        {
+          "path": "/link",
+          "name": "link",
+          "desc": "Link 文字链接"
+        },
+        {
+          "desc": "基础地图",
+          "name": "map",
+          "path": "/map"
+        }
+      ]
+    },
+    {
+      "desc": "Form",
+      "path": "/component",
+      "items": [
+        {
+          "path": "/radio",
+          "name": "radio",
+          "desc": "Radio 单选框"
+        },
+        {
+          "path": "/checkbox",
+          "name": "checkbox",
+          "desc": "Checkbox 多选框"
+        },
+        {
+          "path": "/input",
+          "name": "input",
+          "desc": "Input 输入框"
+        },
+        {
+          "path": "/input-number",
+          "name": "input-number",
+          "desc": "InputNumber 计数器"
+        },
+        {
+          "path": "/select",
+          "name": "select",
+          "desc": "Select 选择器"
+        },
+        {
+          "path": "/cascader",
+          "name": "cascader",
+          "desc": "Cascader 级联选择器"
+        },
+        {
+          "path": "/switch",
+          "name": "switch",
+          "desc": "Switch 开关"
+        },
+        {
+          "path": "/slider",
+          "name": "slider",
+          "desc": "Slider 滑块"
+        },
+        {
+          "path": "/time-picker",
+          "name": "time-picker",
+          "desc": "TimePicker 时间选择器"
+        },
+        {
+          "path": "/date-picker",
+          "name": "date-picker",
+          "desc": "DatePicker 日期选择器"
+        },
+        {
+          "path": "/datetime-picker",
+          "name": "datetime-picker",
+          "desc": "DateTimePicker 日期时间选择器"
+        },
+        {
+          "path": "/upload",
+          "name": "upload",
+          "desc": "Upload 上传"
+        },
+        {
+          "path": "/rate",
+          "name": "rate",
+          "desc": "Rate 评分"
+        },
+        {
+          "path": "/color-picker",
+          "name": "color-picker",
+          "desc": "ColorPicker 颜色选择器"
+        },
+        {
+          "path": "/transfer",
+          "name": "transfer",
+          "desc": "Transfer 穿梭框"
+        },
+        {
+          "path": "/form",
+          "name": "form",
+          "desc": "Form 表单"
+        }
+      ]
+    },
+    {
+      "desc": "Data",
+      "path": "/component",
+      "items": [
+        {
+          "path": "/table",
+          "name": "table",
+          "desc": "Table 表格"
+        },
+        {
+          "path": "/tag",
+          "name": "tag",
+          "desc": "Tag 标签"
+        },
+        {
+          "path": "/progress",
+          "name": "progress",
+          "desc": "Progress 进度条"
+        },
+        {
+          "path": "/tree",
+          "name": "tree",
+          "desc": "Tree 树形控件"
+        },
+        {
+          "path": "/pagination",
+          "name": "pagination",
+          "desc": "Pagination 分页"
+        },
+        {
+          "path": "/badge",
+          "name": "badge",
+          "desc": "Badge 标记"
+        },
+        {
+          "path": "/avatar",
+          "name": "avatar",
+          "desc": "Avatar 头像"
+        }
+      ]
+    },
+    {
+      "desc": "Notice",
+      "path": "/component",
+      "items": [
+        {
+          "path": "/alert",
+          "name": "alert",
+          "desc": "Alert 警告"
+        },
+        {
+          "path": "/loading",
+          "name": "loading",
+          "desc": "Loading 加载"
+        },
+        {
+          "path": "/message-box",
+          "name": "message-box",
+          "desc": "MessageBox 弹框"
+        },
+        {
+          "path": "/notification",
+          "name": "notification",
+          "desc": "Notification 通知"
+        }
+      ]
+    },
+    {
+      "desc": "Navigation",
+      "path": "/component",
+      "items": [
+        {
+          "path": "/menu",
+          "name": "menu",
+          "desc": "NavMenu 导航菜单"
+        },
+        {
+          "path": "/tabs",
+          "name": "tabs",
+          "desc": "Tabs 标签页"
+        },
+        {
+          "path": "/breadcrumb",
+          "name": "breadcrumb",
+          "desc": "Breadcrumb 面包屑"
+        },
+        {
+          "path": "/page-header",
+          "name": "page-header",
+          "desc": "PageHeader 页头"
+        },
+        {
+          "path": "/dropdown",
+          "name": "dropdown",
+          "desc": "Dropdown 下拉菜单"
+        },
+        {
+          "path": "/steps",
+          "name": "steps",
+          "desc": "Steps 步骤条"
+        }
+      ]
+    },
+    {
+      "desc": "Others",
+      "path": "/component",
+      "items": [
+        {
+          "path": "/dialog",
+          "name": "dialog",
+          "desc": "Dialog 对话框"
+        },
+        {
+          "path": "/tooltip",
+          "name": "tooltip",
+          "desc": "Tooltip 文字提示"
+        },
+        {
+          "path": "/popover",
+          "name": "popover",
+          "desc": "Popover 弹出框"
+        },
+        {
+          "path": "/popconfirm",
+          "name": "popconfirm",
+          "desc": "Popconfirm 气泡确认框"
+        },
+        {
+          "path": "/card",
+          "name": "card",
+          "desc": "Card 卡片"
+        },
+        {
+          "path": "/carousel",
+          "name": "carousel",
+          "desc": "Carousel 走马灯"
+        },
+        {
+          "path": "/collapse",
+          "name": "input",
+          "desc": "Collapse 折叠面板"
+        },
+        {
+          "path": "/timeline",
+          "name": "timeline",
+          "desc": "Timeline 时间线"
+        },
+        {
+          "path": "/divider",
+          "name": "divider",
+          "desc": "Divider 分割线"
+        },
+        {
+          "path": "/calendar",
+          "name": "calendar",
+          "desc": "Calendar 日历"
+        },
+        {
+          "path": "/image",
+          "name": "image",
+          "desc": "Image 图片"
+        },
+        {
+          "path": "/backtop",
+          "name": "backtop",
+          "desc": "Backtop 回到顶部"
+        },
+        {
+          "path": "/infiniteScroll",
+          "name": "infiniteScroll",
+          "desc": "InfiniteScroll 无限滚动"
+        },
+        {
+          "path": "/drawer",
+          "name": "drawer",
+          "desc": "Drawer 抽屉"
+        }
+      ]
+    }
+  ],
+  "笔记": [
+    {
+      "name": "test",
+      "path": "/test",
+      "type": "other"
+    },
+    {
+      "name": "create",
+      "path": "/create",
+      "desc": "项目创建"
+    },
+    {
+      "name": "markdown",
+      "path": "/markdown",
+      "desc": "Markdown"
+    },
+    {
+      "name": "theme",
+      "path": "/theme",
+      "desc": "样式管理"
+    },
+    {
+      "name": "iconfont",
+      "path": "/iconfont",
+      "desc": "Iconfont"
+    }
+  ]
+}

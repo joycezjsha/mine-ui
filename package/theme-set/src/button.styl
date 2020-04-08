@@ -1,0 +1,196 @@
+@charset "UTF-8"
+@import "./common/var";
+/*混入*/
+button-size(pv, ph, fs, pr) {
+  padding: pv ph;
+  font-size: fs;
+  border-radius: pr;
+}
+
+button-variant(ccc, bbb, bbc)
+  color: ccc;
+  background-color: bbb;
+  border-color: bbc;
+  &:hover,
+  &:focus
+    background: lighten(bbb, $--button-hover-tint-percent);
+    border-color: lighten(bbc, $--button-hover-tint-percent);
+    color: ccc;
+  &:active
+    background: darken(bbb, $--button-active-shade-percent);
+    border-color: darken(bbc, $--button-active-shade-percent);
+    color: ccc;
+    outline: none;
+  &.is-active
+    background: darken(bbb, $--button-active-shade-percent);
+    border-color: darken(bbc, $--button-active-shade-percent);
+    color: ccc;
+  &.is-disabled
+    &,
+    &:hover,
+    &:focus,
+    &:active
+      color: $--color-white;
+      background-color: lighten(bbb, 50%);
+      border-color: lighten(bbc, 50%);
+  &.is-plain
+    button-plain(bbb)
+
+button-plain(ccc) {
+  color: ccc;
+  background: mix($--color-white, ccc, 90%);
+  border-color: mix($--color-white, ccc, 60%);
+  &:hover,
+  &:focus {
+    background: ccc;
+    border-color: ccc;
+    color: $--color-white;
+  }
+  &:active {
+    background: mix($--color-black, ccc, $--button-active-shade-percent);
+    border-color: mix($--color-black, ccc, $--button-active-shade-percent);
+    color: $--color-white;
+    outline: none;
+  }
+  &.is-disabled {
+    &,
+    &:hover,
+    &:focus,
+    &:active {
+      color: mix($--color-white, ccc, 40%);
+      background-color: mix($--color-white, ccc, 90%);
+      border-color: mix($--color-white, ccc, 80%);
+    }
+  }
+}
+
+/*样式*/
+.mine-button
+  display: inline-block;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  background: $--button-default-fill;
+  border: $--border-base;
+  border-color: $--button-default-border;
+  color: $--button-default-color;
+  -webkit-appearance: none;
+  text-align: center;
+  box-sizing: border-box;
+  outline: none;
+  margin: 0;
+  transition: .1s;
+  font-weight: $--button-font-weight;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  & + &
+    margin-left: 10px;
+  button-size($--button-padding-vertical, $--button-padding-horizontal, $--button-font-size, $--button-border-radius);
+  &:hover,
+  &:focus
+    color: $--color-primary;
+    border-color: $--color-primary-light-7;
+    background-color: $--color-primary-light-9;
+  &:active
+    color: darken($--color-primary, $--button-active-shade-percent);
+    border-color: darken($--color-primary, $--button-active-shade-percent);
+    outline: none;
+  &::-moz-focus-inner
+    border: 0;
+  & [class*="mi-icon-"]
+    & + span
+      margin-left: 5px;
+
+.mine-button.is-plain:hover, .mine-button.is-plain:focus
+  background: $--color-white;
+  border-color: $--color-primary;
+  color: $--color-primary;
+
+.mine-button.is-active, .mine-button.is-plain:active
+  color: darken($--color-primary, $--button-active-shade-percent);
+  border-color: darken($--color-primary, $--button-active-shade-percent);
+
+.mine-button.is-plain:active
+  background: $--color-white;
+  outline: 0
+
+.mine-button.is-disabled, .mine-button.is-disabled:focus, .mine-button.is-disabled:hover
+  color: $--button-disabled-color;
+  cursor: not-allowed;
+  background-image: none;
+  background-color: $--button-disabled-fill;
+  border-color: $--button-disabled-border;
+
+.mine-button.is-disabled.mi-button--text
+  background-color: transparent;
+
+.mine-button.is-disabled.is-plain, .mine-button.is-disabled.is-plain:focus, .mine-button.is-disabled.is-plain:hover
+  background-color: $--color-white;
+  border-color: $--button-disabled-border;
+  color: $--button-disabled-color;
+
+.mine-button.is-round
+  border-radius: 20px;
+  padding: 12px 23px
+
+.mine-button.is-circle
+  border-radius: 50%;
+  padding: $--button-padding-vertical;
+
+.mine-button--primary
+  button-variant($--button-primary-color, $--button-primary-fill, $--button-primary-border);
+
+.mine-button--success
+  button-variant($--button-success-color, $--button-success-fill, $--button-success-border);
+
+.mine-button--warning
+  button-variant($--button-warning-color, $--button-warning-fill, $--button-warning-border);
+
+.mine-button--danger
+  button-variant($--button-danger-color, $--button-danger-fill, $--button-danger-border);
+
+.mine-button--info
+  button-variant($--button-info-color, $--button-info-fill, $--button-info-border);
+
+.mine-button--medium
+  button-size($--button-medium-padding-vertical, $--button-medium-padding-horizontal, $--button-medium-font-size, $--button-medium-border-radius);
+
+.mine-button--medium.is-circle
+  padding: $--button-medium-padding-vertical;
+
+.mine-button--small
+  button-size($--button-small-padding-vertical, $--button-small-padding-horizontal, $--button-small-font-size, $--button-small-border-radius);
+
+.mine-button--small.is-circle
+  padding: $--button-small-padding-vertical;
+
+.mine-button--mini
+  button-size($--button-mini-padding-vertical, $--button-mini-padding-horizontal, $--button-mini-font-size, $--button-mini-border-radius);
+
+.mine-button--small.is-circle
+  padding: $--button-mini-padding-vertical;
+
+.mine-button--text
+  border-color: transparent;
+  color: $--color-primary;
+  background: transparent;
+  padding-left: 0;
+  padding-right: 0
+  &:hover,
+  &:focus
+    color: lighten($--color-primary, $--button-hover-tint-percent);
+    border-color: transparent;
+    background-color: transparent;
+  &:active
+    color: darken($--color-primary, $--button-active-shade-percent);
+    border-color: transparent;
+    background-color: transparent;
+  &.is-disabled,
+  &.is-disabled:hover,
+  &.is-disabled:focus
+    border-color: transparent;
+
+
+
+

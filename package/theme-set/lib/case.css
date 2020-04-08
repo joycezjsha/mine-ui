@@ -1,0 +1,230 @@
+@charset "UTF-8";
+/* theme-set Variables */
+/* Transition
+-------------------------- */
+/* Color
+-------------------------- */
+/* 53a8ff */
+/* 66b1ff */
+/* 79bbff */
+/* 8cc5ff */
+/* a0cfff */
+/* b3d8ff */
+/* c6e2ff */
+/* d9ecff */
+/* ecf5ff */
+/* Link
+-------------------------- */
+/* Border
+-------------------------- */
+/* Fill
+-------------------------- */
+/* Typography
+-------------------------- */
+/* Size
+-------------------------- */
+/* z-index
+-------------------------- */
+/* Disable base
+-------------------------- */
+/* Icon
+-------------------------- */
+/* Checkbox
+-------------------------- */
+/* Radio
+-------------------------- */
+/* Select
+-------------------------- */
+/* Alert
+-------------------------- */
+/* MessageBox
+-------------------------- */
+/* Message
+-------------------------- */
+/* Notification
+-------------------------- */
+/* Input
+-------------------------- */
+/* Cascader
+-------------------------- */
+/* Group
+-------------------------- */
+/* Tab
+-------------------------- */
+/* Button
+-------------------------- */
+/* cascader
+-------------------------- */
+/* Switch
+-------------------------- */
+/* Dialog
+-------------------------- */
+/* Table
+-------------------------- */
+/* Pagination
+-------------------------- */
+/* Popup
+-------------------------- */
+/* Popover
+-------------------------- */
+/* Tooltip
+-------------------------- */
+/* Tag
+-------------------------- */
+/* Tree
+-------------------------- */
+/* Dropdown
+-------------------------- */
+/* Badge
+-------------------------- */
+/* Card
+--------------------------*/
+/* Slider
+--------------------------*/
+/* Steps
+--------------------------*/
+/* Menu
+--------------------------*/
+/* Rate
+--------------------------*/
+/* DatePicker
+--------------------------*/
+/* Loading
+--------------------------*/
+/* Scrollbar
+--------------------------*/
+/* Carousel
+--------------------------*/
+/* Collapse
+--------------------------*/
+/* Transfer
+--------------------------*/
+/* Header
+  --------------------------*/
+/* Footer
+--------------------------*/
+/* Main
+--------------------------*/
+/* Timeline
+--------------------------*/
+/* Backtop
+--------------------------*/
+/* Link
+--------------------------*/
+/* Calendar
+--------------------------*/
+/* Form
+-------------------------- */
+/* Avatar
+--------------------------*/
+/* Break-point
+--------------------------*/
+/*混入*/
+.case-main {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto; }
+.case-main .case__title {
+    width: 100%;
+    height: 80px;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    line-height: 80px;
+    background: #000; }
+.case-main .case__body {
+    margin-top: .1vw;
+    width: 100%;
+    height: calc(99.8vh - 80px);
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+.case-main .case__body .case_menu {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 15%;
+      min-width: 250px;
+      height: 100%;
+      background: #000;
+      margin-top: .2vw;
+      border-right: 0.1vw #fff solid; }
+.case-main .case__body .case_menu .case_menu ul {
+        padding: 20px 0;
+        margin: 0;
+        width: 100%; }
+.case-main .case__body .case_menu .case_menu ul .case_menu ul li {
+          width: 80%;
+          height: 3vw;
+          padding: 0;
+          margin: 1vw auto;
+          background-color: #fff;
+          border-radius: .2vw;
+          font-family: Avenir,Helvetica,Arial,sans-serif;
+          font-size: 18px;
+          cursor: pointer;
+          color: #000;
+          line-height: 3vw; }
+.case-main .case__body .case_menu .case_menu ul .case_menu ul li._active {
+          background: #099;
+          color: #fff; }
+.case-main .case__body .case_menu .case_menu ul .case_menu ul li:nth-child(1) {
+          margin: 0 auto 1vw auto; }
+.case-main .case__body .case_item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 85%;
+      height: 100%;
+      margin-top: .2vw;
+      margin-left: .1vw;
+      position: relative; }
+.case-main .case__body .case_item .case-multiple {
+        height: 100%; }
+.case-main .case__body .case_item .case-multiple .case-multiple ul li {
+          float: left;
+          width: 23%;
+          list-style: none;
+          height: auto;
+          -webkit-box-shadow: 0 0 10px #ccc;
+                  box-shadow: 0 0 10px #ccc;
+          overflow: hidden;
+          margin-right: 2%;
+          margin-left: 0;
+          min-width: 300px; }
+.case-main .case__body .case_item .case-multiple .case-multiple ul li .case-img-box {
+            width: 100%;
+            height: 22vh;
+            cursor: pointer;
+            overflow: hidden;
+            padding: 5px; }
+.case-main .case__body .case_item .case-multiple .case-multiple ul li .case-img-box .case-image {
+              -webkit-transition: all .5s ease;
+              transition: all .5s ease;
+              width: 100%;
+              height: 100%; }
+.case-main .case__body .case_item .case-multiple .case-multiple ul li .case-img-box .case-image:hover {
+              -webkit-transform: scale(1.1);
+                      transform: scale(1.1);
+              /* 放大1.2倍 */ }
+.case-main .case__body .case_item .case-multiple .part-btn {
+          position: absolute;
+          z-index: 1004;
+          top: 8%;
+          right: 3%;
+          height: 34px;
+          width: 50px;
+          line-height: 34px;
+          cursor: pointer;
+          text-align: right; }
+.case-main .case__body .case_item .case-item {
+        width: 100%;
+        height: 100%; }
+.case-main .case__body .case_item .case-item .case-item-content {
+          height: 100%;
+          z-index: 1003;
+          top: 0;
+          left: 12%;
+          -webkit-transition: width 0.3s;
+          transition: width 0.3s; }
